@@ -1,0 +1,445 @@
+/* CSS Properties */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.para2 {
+  padding-top: 10px;
+  font-size: small;
+  text-align: justify;
+  position: relative;
+  min-width: 40vw;
+  font-family: "Poppins";
+  font-style: italic;
+  color: black;
+}
+
+.image1 {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.vector {
+  position: relative;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+#vector1 {
+  position: absolute;
+  height: 63px;
+  top: 0px;
+  left: 684px;
+  z-index: 2;
+}
+
+#vector2 {
+  position: absolute;
+  height: 90px;
+  top: 36px;
+  left: 675px;
+  transform: rotateZ(-5deg);
+  z-index: 1;
+}
+
+#vector3 {
+  position: absolute;
+  height: 51px;
+  top: 175px;
+  left: 747px;
+  opacity: 0.9;
+}
+
+#vector4 {
+  position: absolute;
+  height: 64px;
+  top: 219px;
+  left: 816px;
+  transform: rotateZ(0deg);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  font-family: "Montserrat";
+  font-weight: 800;
+  z-index: 3;
+  width: 100%;
+  height: 10vh;
+  color: #1f1f1f;
+  position: fixed;
+}
+
+.img1 {
+  margin-left: 56px;
+  padding-right: 10px;
+
+}
+
+.main1 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f3f3f3;
+  margin-top: 10vh;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+.box1 {
+  width: 28%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+.sideimage {
+  position: absolute;
+  height: 20%;
+  bottom: 0;
+  left: 0;
+  opacity: 1.5;
+}
+
+.dots {
+  position: absolute;
+  height: 10%;
+  left: 2%;
+}
+
+.arrows {
+  position: absolute;
+  height: 3%;
+  top: 95%;
+  left: 67%;
+}
+
+.para1 {
+  font-size: 1.5rem;
+  text-align: justify;
+  font-weight: bold;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: black;
+}
+
+span {
+  color: #fd7901;
+}
+
+.main2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  background-color: white;
+  /* border: 2px solid red; */
+}
+
+.mbox1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 7%;
+  height: 100vh;
+  width: 45vw;
+}
+
+.mbox2 {
+  margin: auto;
+  margin-top: 40px;
+  border: 1px solid #c0c0c0;
+  height: 90vh;
+  width: 35vw;
+}
+
+h1 {
+  margin-right: 30%;
+  margin-top: 10px;
+  font-family: "Liberation Sans";
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+input,
+.input {
+  padding: 6px;
+  margin-bottom: 10px;
+  margin-top: 6px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.input2 {
+  width: 40%;
+  margin-left: 20px;
+}
+
+.radiobtn {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin-right: 20px;
+  font-family: "Liberation Sans";
+  font-size: 14px;
+}
+
+.radiobtn input[type="radio"]:checked+label::before {
+  background-color: #000;
+}
+
+.radiobtn input[type="radio"]:checked+label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+}
+
+.radiobtn label {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.radiobtn1,
+.radiobtn2 {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 7px;
+  border-style: none;
+  background: #ff9a00;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 10vw;
+}
+
+.que-ans {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  color: #000;
+  width: 40vw;
+  font-weight: 700;
+}
+
+.que {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.ans {
+  font-family: "Montserrat";
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.rect {
+  position: absolute;
+  top: 120vh;
+  height: 10%;
+  left: 45%;
+}
+
+.list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 12px;
+  color: #000;
+  width: 40vw;
+}
+
+li {
+  margin-top: 20px;
+}
+
+.img3 {
+  position: absolute;
+  top: 800px;
+  height: 200px;
+  bottom: 16px;
+  left: -38px;
+  transform: rotateZ(-25deg);
+  z-index: 2;
+}
+
+.man {
+  position: absolute;
+  width: 25%;
+  top: 125vh;
+  left: 8%;
+  z-index: 3;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25vh;
+  z-index: 5;
+  background: url("footer.webp");
+  color: #f3f3f3;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #015d84;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.footer1 {
+  font-family: "Montserrat";
+  font-weight: 800;
+}
+
+.footer2 {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 12px;
+  width: 92%;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .img1 {
+    margin: 10px 0;
+  }
+
+  .image1 {
+    visibility: hidden;
+    width: 100%;
+    height: auto;
+  }
+
+  .vector {
+    width: 100%;
+
+  }
+
+  .main1 {
+    flex-direction: column;
+    margin-top: 70px;
+    height: auto;
+  }
+
+  .main2 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .mbox1,
+  .mbox2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .img3 {
+    top: 1300px;
+  }
+
+  .box1 {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .para1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .para2 {
+    font-size: small;
+    text-align: center;
+    min-width: auto;
+  }
+
+  .box2 {
+    text-align: center;
+  }
+
+  .input,
+  input[type="email"],
+  input[type="tel"],
+  input[type="text"],
+  select {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .list,
+  .que-ans {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .que,
+  .ans {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .list ul {
+    padding-left: 20px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {}
